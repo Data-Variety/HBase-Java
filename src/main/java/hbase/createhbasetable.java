@@ -2,7 +2,6 @@ package hbase;
 
 import java.io.IOException;
 
-import com.google.inject.internal.util.$ToStringBuilder;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.client.*;
@@ -36,5 +35,7 @@ public class createhbasetable {
         } finally {
             connection.close();
         }
+
     }
+
 }
