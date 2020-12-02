@@ -17,9 +17,9 @@ public class createhbasetable {
         try {
             HBaseAdmin admin = (HBaseAdmin) connection.getAdmin();
 
-            // create the table...
+            // create the bigtable
             HTableDescriptor tableDescriptor = new HTableDescriptor(TableName.valueOf("users"));
-            // ... with two column families
+            // create column  families for bigtable
             tableDescriptor.addFamily(new HColumnDescriptor("personalinfo"));
             tableDescriptor.addFamily(new HColumnDescriptor("skills"));
 
